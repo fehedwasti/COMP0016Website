@@ -66,7 +66,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-2">Unit Testing</h2>
+            <h2 class="mb-2">Unit Testing & UAT</h2>
             <br>
           </div>
         </div>
@@ -74,42 +74,47 @@
         <br>
         <p style="text-align: justify">Upon arriving at a stage where we had a working prototype, testing had become
           a vital part of further developing the game. As a result, we wrote several different unit tests to ensure
-          all aspects of the skeletal tracking were behaving as expected.
-
-
+          all aspects of the skeletal tracking were behaving as expected. Before each stage of adding more features to
+          the game, we would write more test scripts for the new features and rerun all tests after a change is implemented.
+          <br><br>
+          User Acceptance Testing is just as important as Unit testing. Every week the group would come together and test the game along with our Teaching Assistant
+          or our Client. This was to make sure the users of the application found the game interesting and engaging.
         </p>
       </div>
+
+      <br><br><br>
+
       <div class="container">
-      	<div class="row justify-content-center">
+        <div class="row justify-content-center">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-2">Prototype Implementation</h2>
+            <h2 class="mb-2">Compatibility Testing</h2>
             <br>
           </div>
         </div>
-        <p style="text-align: justify">Currently, we have developed a working prototype of the skeletal tracker
-          and implemented it into a boxing game. The skeletal tracker is mapping movements
-          of the arms and upper body and if a certain gesture such as punching with your right
-          hand is detected, the action is recorded by the boxing game. However, sometimes the
-          tracker fails to detect the motion and so the action is not registered.
-        </p>
-        <img src="images/prototype.gif" alt="questionnaire result" class="center">
-        <br>
-        <p style="text-align: justify">The next stages of the project will be to fix the unregistered actions bug, add more
-          actions such as dodging objects and allowing the user to increase the difficulty, the speed
-          of the objects. Furthermore, a scoreboard system could be used to allow users to track their
-          performance progess to see which areas of practice need improvement.
 
+        <br>
+        <p style="text-align: justify">It's also important to understand the different hardwares that could
+          be used with our skeletal tracking library and so once we had our working prototype, we used the
+          Kinect sensor and tried playing the game on computers with different specifications. We noticed
+          that the game was only compatible on computers running windows although laptops primarily running
+          MacOS had the option to install Windows using Bootcamp and use the library.
+          <br><img src="images/compatible.png" alt="WindowsPC" class="center"><br>
+          However, the VR boxing game we developed using the library requires users to use the Windows Mixed
+          Reality Headsets which are only compatible with computers originally built to run Windows. MacOS users
+          can not make use of the boxing game. For the best experience, a computer with a high-end graphics card
+          is recommended.
         </p>
       </div>
+
     </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+            </p>
           </div>
         </div>
       </div>
